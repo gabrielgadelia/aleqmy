@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login Page
+{% endblock %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{url_for('static', filename='script/script.js')}}"></script>
+</head>
+
+
+
+{% block body %}
+<form class="row g-3">
+  {{form.hidden_tag ()}}
+  {% from 'macros.html' import render_input %}
+  <div class="col-md-6">
+    {{ form.email.label }}
+    {{ form.email }}
+  </div>
+  <div class="col-md-6">
+    {{ form.password.label }}
+    {{ form.password }}
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    {% for errors, value in form.errors.items() %}
+         {{ value }}
+    {% endfor %}
+  </div>
+
+</form>
+{% endblock %}

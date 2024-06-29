@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+register
+{% endblock %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{url_for('static', filename='script/script.js')}}"></script>
+</head>
+
+
+
+{% block body %}
+<div style="display: flex; justify-content: center;">
+  <form action="{{ url_for('user.register') }}" method="post" style="width: 30%; text-align: center;"
+  enctype="multipart/form-data">
+  {% from 'macros.html' import render_field %}
+  {{ form.hidden_tag() }}
+  {% for field in form %}
+    {% if field.name != 'csrf_token' %}
+    <div class="mb-3">
+      {{ render_field(field) }}
+    </div>
+    {% endif %}
+  {% endfor %}
+
+</form>
+</div>
+{% endblock %}

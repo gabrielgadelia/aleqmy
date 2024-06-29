@@ -1,0 +1,28 @@
+{% macro render_input(name, placeholder, type='text', class='') %}
+<input type="{{ type }}" name="{{ name }}" placeholder="{{ placeholder }}"
+class="{{ class }}">
+{% endmacro %}
+
+{% macro render_field(field, value='') %}
+
+  {% if field.name != 'submit' %}
+  <dt>{{ field.label }}
+  {% endif %}
+
+  {% if field.name == 'submit' %}
+    <dd>{{ field(value='submit', **kwargs)|safe }}
+  {% elif value %}
+    <dd>{{ field(value=value, **kwargs)|safe }}
+  {% else %}
+    <dd>{{ field(**kwargs)|safe }}
+  {% endif %}
+
+  {% if field.errors %}
+    <ul class=errors>
+    {% for error in field.errors %}
+      <li style="list-style: none; color:red;">{{ error }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+  </dd>
+{% endmacro %}

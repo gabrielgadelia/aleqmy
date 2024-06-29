@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+Home Page
+{% endblock %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="{{url_for('static', filename='script/script.js')}}"></script>
+
+</head>
+
+{% block body %}
+
+<h1 style="font-size: 50px; font-family: cursive; font-weight: bolder; display: flex;
+justify-content: center; display-content:center">today we are going to talk about some different types of cars</h1>
+
+<div class="cars">
+    <a href="{{url_for('bmw')}}" ><img style="width: 100px; height: 100px" src="{{ url_for('static', filename='images/BMW.svg.png') }}" alt="bmw"></a>
+    <a href="{{url_for('porsche')}}"><img style="width: 200px; height: 100px" src="{{url_for('static', filename='images/porsche-logo.jpg')}}" alt="porsche"></a>
+    <a href="{{url_for('mercedes')}}"><img style="width: 130px; height: 100px" src="{{url_for('static', filename='images/Mercedes-Logo.svg.png')}}" alt="mercedes"></a>
+    <a href="{{url_for('bugatti')}}"><img style="width: 170px; height: 150px" src="{{url_for('static', filename='images/bugatti.jpg')}}" alt="bugati"></a>
+</div>
+
+{% endblock %}

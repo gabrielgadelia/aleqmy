@@ -1,0 +1,193 @@
+{% extends 'base.html'%}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{url_for('static', filename='script/script.js')}}"></script>
+
+</head>
+
+{% block body %}
+
+<div class="bugati">
+    <h1 class="title"> bugatti go brrr</h1>
+    <p class="para">
+        Automobiles Ettore Bugatti was a German then French manufacturer of high-performance automobiles.
+        The company was founded in 1909 in the then-German city of Molsheim, Alsace, by the Italian-born
+        industrial designer Ettore Bugatti. The cars were known for their design beauty and numerous race
+        victories. Famous Bugatti automobiles include the Type 35 Grand Prix cars, the Type 41 "Royale",
+        the Type 57 "Atlantic" and the Type 55 sports car.
+        The death of Ettore Bugatti in 1947 proved to be a severe blow to the marque, and the death of
+        his son Jean in 1939 meant that there was no successor to lead the factory with no more than about
+        8,000 cars made. The company struggled financially, and it released one last model in the 1950s
+        before eventually being purchased for its airplane parts business in 1963.
+
+        The founder Ettore Bugatti was born in Milan, Italy, and the automobile company that bears his name
+        was founded in 1909 in Molsheim located in the Alsace region which was part of the German Empire from
+        1871 to 1919. The company was known both for the level of detail of its engineering in its automobiles,
+        and for the artistic manner in which the designs were executed, given the artistic nature of Ettore's
+        family (his father, Carlo Bugatti (1856–1940), was an important Art Nouveau furniture and jewelry designer).
+
+        During the war Ettore Bugatti was sent away, initially to Milan and later to Paris, but as soon as
+        hostilities had been concluded he returned to his factory at Molsheim. Less than four months after
+        the Versailles Treaty formalised the transfer of Alsace from Germany to France, Bugatti was able to
+        obtain, at the last minute, a stand at the 15th Paris motor show in October 1919. He exhibited three
+        light cars, all of them closely based on their pre-war equivalents, and each fitted with the same overhead
+        camshaft 4-cylinder 1,368cc engine with four valves per cylinder. Smallest of the three was a "Type 13"
+        with a racing body (constructed by the Bugatti themselves) and using a chassis with a 2,000 mm (78.7 in)
+        wheelbase. The others were a "Type 22" and a "Type 23" with wheelbases of 2,250 and 2,400 mm (88.6 and 94.5 in)
+        respectively.
+
+        Bugatti Automobiles S.A.S. (French pronunciation: [bygati]) is a French luxury sports car manufacturer.
+        The company was founded in 1998 as a subsidiary of the Volkswagen Group and is based in Molsheim, Alsace,
+        France. The original Bugatti automobile brand was established by Ettore Bugatti (1881–1947) in 1909 at
+        Molsheim and built sports, racing and luxury cars.
+        In November 2021, the company became part of Bugatti Rimac, a joint venture between Rimac Group
+        and Porsche AG. Since November 1, 2021, the company has been led by Mate Rimac as chief executive
+        officer of Bugatti Rimac.
+    </p>
+    <img style="width: 450px; height: 350px; float: right" src="{{ url_for('static', filename='images/Bugatti_Molsheim_109.jpg') }}" alt="bugatiti">
+    <p class="para">
+        On December 22, 1998, Volkswagen AG, a German automotive manufacturer now controlled by Porsche SE, established
+        Bugatti Automobiles S.A.S. as a French-registered, wholly-owned subsidiary. On the same day, the company took
+        over the design and naming rights to Bugatti from Italian businessman Romano Artioli, who built supercars
+        (such as the EB 110 and EB 112) with Bugatti SpA in Italy between 1987 and 1998. Since 2000, the Bugatti automobile
+        brand has officially existed as Bugatti Automobiles S.A.S., still abbreviated to Bugatti. Since then, the company's
+        headquarters have once again been located in Molsheim, France.
+        On 22 December 2000, Volkswagen officially incorporated Bugatti Automobiles S.A.S., with former VW drivetrain chief
+        Karl-Heinz Neumann as president. The company purchased the 1856 Château Saint-Jean, formerly Ettore Bugatti's guest
+        house in Dorlisheim, near Molsheim, and began refurbishing it to serve as the company's headquarters. The original
+        factory was still in the hands of Snecma, who were unwilling to part with it. At the Pebble Beach Concours d'Elegance
+        in August 2000, VW announced that they would instead build a new modern atelier (factory) next to and south of the
+        château. The atelier was officially inaugurated on 3 September 2005.
+        In September 2020, it was announced that Volkswagen was preparing to sell its Bugatti automobile brand, and talks
+        began with the Croatian company Rimac Automobili. Around 700 Bugatti cars had been sold since 2005, but Volkswagen
+        Group CEO Herbert Diess saw the unprofitable brand as ballast, the company said.
+        In 2020, Bugatti delivered 77 vehicles to customers. In January 2021, Bugatti announced that it had increased its
+        operating profit for the third year in a row. This marked the most successful year in the company's history.
+        In July 2021, it was announced that Bugatti Automobiles and the sports car operations of Rimac Automobili will be
+        merged to form Bugatti Rimac, a joint venture between Rimac Group and Porsche AG. The newly formed Rimac Group
+        will be the majority shareholder with a 55% stake in Bugatti Rimac, while Porsche AG will hold the remaining 45%
+        stake, as well as a 24% stake in Rimac Group. The formation of Bugatti Rimac d.o.o. took place in the fourth quarter of 2021.
+        After years of building one-offs and limited edition models, in December 2021, Bugatti officially created its own
+        bespoke division – Sur Mesure. The phrase means 'tailored' in French.
+    </p>
+</div>
+
+<div>
+
+    <h1 class="title"> The Cars Of Bugatti </h1>
+    <ul>
+        <li>
+            <div>
+                <h1 style="color: #930808"> Oldest Car</h1>
+                <p style="width: 1500px; float: left" class="para">
+                    The Bugatti Type 13 was the first true[clarification needed] Bugatti car.
+                    Production of the Type 13, and later Types 15, 17, 22, and 23, began with
+                    the company's founding in 1910 and lasted through 1920, with 435 examples
+                    produced. Most road cars used an eight-valve engine, though five Type 13
+                    racers had 16-valve heads, some of the first ever produced. The road cars
+                    became known as pur-sang ("thoroughbred") in keeping with Ettore Bugatti's
+                    feelings for his designs.
+                    The car was brought back after World War I with a multivalve engine to bring
+                    fame to the marque at Brescia. The production Brescia tourer also brought in
+                    much-needed cash.
+                    Upon starting operations at his new factory in Molsheim, Bugatti refined his light
+                    shaft-driven car into the Type 13 racer. This included boring the engine out to 65
+                    mm for a total of 1.4 L (1368 cc/83 in3). A major advance was the four-valve head
+                    Bugatti designed — one of the first of its type ever conceived. Power output with
+                    dual Zenith carburetters reached 30 hp (22 kW) at 4500 rpm, more than adequate for
+                    the 660-lb (300-kg) car. Leaf springs were now fitted all around, and the car rode
+                    on a roughly 2-m (79-in) wheelbase. Although having the appearance of a toy, the
+                    Bugatti Type 13 was successfully raced. It was seen at hillclimbs as early as 1910
+                    looking rather out of place compared to the bulky and brutish competition. What the
+                    Type 13 lacked in power, it made up in handling, steering, and braking. These important
+                    elements were retained throughout all future Bugatti designs. Top speed was at 125 km/h.
+                    The new company produced five examples in 1910, and entered the French Grand Prix at
+                    Le Mans in 1911. The tiny Bugatti looked out of place at the race, but calmly took
+                    second place after seven hours of racing.
+
+                </p>
+                <img style="width:300px; height:200px; float: right; margin-right: 50px" src="{{url_for('static', filename='images/Bugatti_Typ_13_Brescia_Sport-Racing_1922.jpg')}}" alt="">
+            </div>
+        </li>
+        <li>
+            <div class="newcar">
+                <h1 style="color: #930808"> The Newest Car</h1>
+                <p  style="width: 1400px; float:left" class="para">
+                    The Bugatti Chiron is a mid-engine two-seater sports car designed and developed
+                    in Germany by Bugatti Engineering GmbH and manufactured in Molsheim, France,
+                    by French automobile manufacturer Bugatti Automobiles S.A.S. The successor to
+                    the Bugatti Veyron, the Chiron was first shown at the Geneva Motor Show on
+                    1 March 2016. The car's design was initially previewed with the Bugatti
+                    Vision Gran Turismo concept car unveiled at the 2015 Frankfurt Auto Show.
+                    The car is named after the Monégasque driver Louis Chiron. The car shares
+                    the name with the 1999 Bugatti 18/3 Chiron concept car.The main carry over component
+                    from the Veyron is the 7,993 cc (8.0 L; 487.8 cu in) quad-turbocharged W16 engine,
+                    though it is heavily updated. The engine in the Chiron has a peak power output of
+                    1,103 kW (1,479 hp; 1,500 PS) at 6,700 rpm and 1,600 N⋅m (1,180 lb⋅ft) of torque
+                    starting from 2,000 to 6,000 rpm. The engine in the most powerful variant of
+                    its predecessor, the Veyron Super Sport generates 221 kW (296 hp; 300 PS) less than
+                    the new Chiron, while the engine in the original Veyron generates 367 kW (492 hp; 499 PS)
+                    less power.
+                </p>
+                <img style="width:400px; height:200px; float: right; margin-right: 50px" src="{{url_for('static', filename='images/Bugatti_Chiron_1.jpg')}}" alt="">
+            </div>
+        </li>
+        <li>
+            <div>
+                <h1 style="color: #930808"> Most Popular Car </h1>
+                <p style="float: left; width:1450px" class="para">
+                    The Bugatti Veyron EB 16.4 is a mid-engine sports car, designed and developed in Germany
+                    by the Volkswagen Group and Bugatti and manufactured in Molsheim, France, by French automobile
+                    manufacturer Bugatti. It was named after the racing driver Pierre Veyron.
+                    The original version has a top speed of 407 km/h (253 mph). It was named the 2000s
+                    Car of the Decade by the BBC television programme Top Gear. The standard Veyron also won
+                    Top Gear's Best Car Driven All Year award in 2005.
+                    The Super Sport version of the Veyron is one of the fastest street-legal production cars
+                    in the world, with a top speed of 431.072 km/h (267.856 mph). The Veyron Grand Sport
+                    Vitesse was the fastest roadster in the world, reaching an averaged top speed of 408.84
+                    km/h (254.04 mph) in a test on 6 April 2013.
+                    The Veyron's chief designer was Hartmut Warkuß, with the exterior being designed by Jozef
+                    Kabaň of Volkswagen. Much of the engineering work was conducted under the guidance of chief
+                    technical officer Wolfgang Schreiber. The Veyron includes a sound system designed and built
+                    by Burmester Audiosysteme.
+                    Several special variants have been produced. In December 2010, Bugatti began offering
+                    prospective buyers the ability to customise exterior and interior colours by using the
+                    Veyron 16.4 Configurator application on the marque's official website. The Bugatti
+                    Veyron was discontinued in late 2014, but special edition models continued to be produced until 2015.
+                </p>
+                <img style="width: 400px; height: 200px; float: right" src="{{url_for('static', filename='images/img.png')}}" alt="">
+            </div>
+        </li>
+        <li>
+            <div>
+                <h1 style="color: #930808; padding-top: 280px"> Bugatti La Voiture Noire </h1>
+
+                <p style="float: left; width:1450px;" class="para">
+                    La Bugatti La Voiture Noire est une supercar GT de luxe du constructeur automobile français Bugatti.
+                    Présentée au salon international de l'automobile de Genève 2019 ce modèle unique est basé sur la Chiron,
+                    qui rend hommage à la Bugatti Type 57 SC Atlantic produite à quatre exemplaires dont une, la 57 Atlantic
+                    noire, véhicule personnel de Jean Bugatti, a disparu entre Molsheim et Bordeaux et n'a jamais été retrouvée.
+                    Automobile parmi les plus chères et rapides du monde, son prix est de 13,2 millions d’euros hors taxes
+                    La Voiture Noire est conçue par le designer de Bugatti Étienne Salomé3. Elle est inspirée de la Bugatti Type
+                    SC57 Atlantic, et basée sur la Chiron produite depuis 2016. Sa version finale est présentée par le moyen d'un
+                    communiqué de presse le 3 juin 2021, soit plus de deux ans après sa première mondiale.
+                    La carrosserie fastback néo-rétro-futuriste en fibre de carbone brillante, est entièrement réalisée à la main,
+                    à l'usine Bugatti de Molsheim en Alsace. L'arête dorsale en aluminium du toit surbaissé, jusqu'à la célèbre
+                    calandre en fer à cheval5 rappelle celles des Bugatti Aérolithe et Bugatti Type SC57 Atlantic des années 19306.
+                </p>
+
+                <img style="width: 400px; height: 250px; float: right" src="{{url_for('static', filename='images/img_1.png')}}" alt="">
+            </div>
+        </li>
+    </ul>
+
+
+</div>
+
+{% endblock %}
+
